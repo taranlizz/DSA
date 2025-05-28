@@ -3,22 +3,22 @@
 using namespace std;
 
 int findNumbers(vector<int>& nums) {
-
-    int maxNumber = 0;
-    int currentNumber = 0;
+    //Initialise variables to track
+    int totalWithEvenDigits = 0;
+    int currentNumberOfDigits = 0;
 
     for (int num : nums){
 
-        currentNumber = 0;
+        currentNumberOfDigits = 0;
 
         while(num > 0){
             num /= 10;
-            currentNumber++;
+            currentNumberOfDigits++;
         };
 
-        if(currentNumber % 2 == 0){
-            maxNumber++;
+        if(currentNumberOfDigits % 2 == 0){
+            totalWithEvenDigits++;
         };
     }
-    return maxNumber;
+    return totalWithEvenDigits;
 }

@@ -17,11 +17,3 @@ int subarray_sum_of_k(const std::vector<int>& n, const int k){
      }
      return max_sum;
 };
-
-
-
-int main(){
-    std::vector<int> test1 = {1, 9, -1, -2, 7, 3, -1,2};
-    int k1 = 4;
-    std::cout << subarray_sum_of_k(test1, k1) << std::endl;
-}

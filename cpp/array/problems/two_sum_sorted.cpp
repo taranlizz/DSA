@@ -32,11 +32,3 @@ vector<int> twoSum(const vector<int>& numbers, const int& target) {
         }
     }
 }
-
-int main() {
-    vector<int> test1 = {2,7,11,15};
-    vector<int> result = twoSum(test1, 9);
-    for (int i: result){
-      std::cout << i << std::endl;
-    }
-}
